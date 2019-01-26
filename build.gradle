@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'me.duncte123.apis'
+version '1.0.0'
+
+sourceCompatibility = 1.8
+
+wrapper {
+    distributionType = Wrapper.DistributionType.BIN
+    gradleVersion = '4.10.3'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
